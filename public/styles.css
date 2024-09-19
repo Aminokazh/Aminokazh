@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.redd.it/gc3ooojju8i11.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Times New Roman';
+    color: #230c18;
+    padding-top: 56px;
+}
+
+/*
+.welcome-text {
+    font-size: 80px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ffffff, #d2f3ee);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 20px 0;
+    animation: fadeInScale 1s ease-in-out;
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.1ы);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+ конце of велком надпись */
+
+
+/* навбар */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 23px;
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: relative;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+/* конец навбара */
+
+
+.container {
+    width: 80%;
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+form h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #79d7c9;
+    color: #fff;
+    padding: 15px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #a05a9a;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #79d7c9;
+    padding: 15px 25px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: #a05a9a;
+    transform: scale(1.05);
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 56px);
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+p {
+    font-size: 1.5em;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    color: #241818;
+}
+
+.main-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.main-btn {
+    background-color: #79d7c9;
+    padding: 15px 30px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.main-btn:hover {
+    background-color: #a05a9a;
+    transform: scale(1.05);
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1px;
+    background-color: #ffffffc4;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-text {
+    color: #ffffff;
+}
